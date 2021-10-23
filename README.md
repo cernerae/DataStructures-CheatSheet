@@ -6,10 +6,10 @@ Data Structures everyone should know
 - [Linked List](#linked-list)
 - [Array](#array)
 - [Hash Table](#hash-table)
-- [Stack & Queue](#stack---queue)
+- [Stack and Queue](#stack-and-queue)
   * [Stack](#stack)
   * [Queue](#queue)
-- [Graphs & Trees](#graphs---trees)
+- [Graphs and Trees](#graphs-and-trees)
   * [Graphs](#graphs)
   * [Trees](#trees)
     + [Binary Search Tree (BST)](#binary-search-tree--bst-)
@@ -20,14 +20,25 @@ Data Structures everyone should know
 
 - Contains **VALUE** and **POINTER**
 
-**PROS**: Good at adding new nodes and deleting nodes
+```
+x, y are of type ListNode. NOT in an Array
+
+Ex: [x, ..., y]
+
+-- Head node is "x"
+---- Head node's "next" points to next Node
+-- Tail node is "y"
+---- Tail node's "next" points to null
+```
+
+**PROS**: Good at adding new nodes and deleting nodes  
 **CONS**: Retrieval
 
 # Array
 
 - Continuous block of cells in computer memory side-by-side
 
-**PROS**: Retrieval
+**PROS**: Retrieval  
 **CONS**: Adding elements, Searching
 
 # Hash Table
@@ -35,10 +46,10 @@ Data Structures everyone should know
 - Uses hashing functions to store in memory
 - Blocks of memory don't have to be next to each other, can be stored anywhere
 
-**PROS**: Retrieval, Adding/Removing keys
+**PROS**: Retrieval, Adding/Removing keys  
 **CONS**: Collisions
 
-# Stack & Queue
+# Stack and Queue
 
 ## Stack
 
@@ -53,10 +64,10 @@ Data Structures everyone should know
 - Adding an item to the end is called **enqueue-ing** and removing it from the front is called **dequeue-ing**
 - Used for Breadth-first search (BFS)
 
-**PROS**: efficient to add & remove
+**PROS**: efficient to add & remove  
 **CONS**: limited use cases
 
-# Graphs & Trees
+# Graphs and Trees
 
 ## Graphs
 
@@ -65,6 +76,8 @@ Data Structures everyone should know
 - Edges can also have **WEIGHTS** assigned to them
 - Example: Two cities can be NODES, while the distance between them is an EDGE
 - Example: Social media networks can/are stored as graphs in order to facilitate complex user relationships
+
+<img src="https://miro.medium.com/max/1292/1*Jjd7qTNuFL9bKT4qpMRWLA.png" height="200" />
 
 ## Trees
 
@@ -86,10 +99,11 @@ Data Structures everyone should know
     2. Left Child Node < Parent Node
     3. Right Child Node > Parent Node
 - We can traverse through a tree and always know where an element is
+
+<img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/binary-tree-to-DLL.png" height="200" />
+
 - BST is not the perfect data structure
     - If you add elements in a weird order, it can get very "one-sided" (or imbalanced)
 - However, self-balancing trees exist (these are advanced data structures):
     - [Red-black Tree](https://en.wikipedia.org/wiki/Red%E2%80%93black_tree)
     - [B-Trees](https://www.cpp.edu/~ftang/courses/CS241/notes/b-tree.htm#:~:text=A%20B%2Dtree%20is%20a,in%20database%20and%20file%20systems.)
-
-
